@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Product = ({ color }) => {
+const Product = () => {
     const [openTab, setOpenTab] = useState(1);
     return (
         <>
@@ -19,8 +19,8 @@ const Product = ({ color }) => {
                                     className={
                                         "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                                         (openTab === 1
-                                            ? "text-white bg-" + color + "-600"
-                                            : "text-" + color + "-600 bg-white")
+                                            ? "text-white bg-green-600"
+                                            : "text-gray-600 bg-white")
                                     }
                                     onClick={e => {
                                         e.preventDefault();
@@ -38,8 +38,8 @@ const Product = ({ color }) => {
                                     className={
                                         "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                                         (openTab === 2
-                                            ? "text-white bg-" + color + "-600"
-                                            : "text-" + color + "-600 bg-white")
+                                            ? "text-white bg-green-600"
+                                            : "text-gray-600 bg-white")
                                     }
                                     onClick={e => {
                                         e.preventDefault();
@@ -57,8 +57,8 @@ const Product = ({ color }) => {
                                     className={
                                         "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                                         (openTab === 3
-                                            ? "text-white bg-" + color + "-600"
-                                            : "text-" + color + "-600 bg-white")
+                                            ? "text-white bg-green-600"
+                                            : "text-gray-600 bg-white")
                                     }
                                     onClick={e => {
                                         e.preventDefault();
