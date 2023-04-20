@@ -5,13 +5,14 @@ import News from '@/components/home/News';
 import Features1 from '@/components/home/features1';
 import Features2 from '@/components/home/features2';
 import Count from '@/components/home/count';
-
+import Product from '../components/home/product';
 const inter = Inter({ subsets: ['latin'] })
 export default function Home({ data }) {
   return (
     <Formate>
 
       <Features2 />
+      <Product />
       <Features1 />
       <Count />
       <News data={data} />
