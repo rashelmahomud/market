@@ -6,68 +6,74 @@ const Product = ({ color }) => {
         <>
             <div className="flex flex-wrap mx-auto lg:mx-28 lg:p-20 p-3">
                 <div className="w-full">
-                    <ul
-                        className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row"
-                        role="tablist"
-                    >
-                        <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-                            <a
-                                className={
-                                    "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
-                                    (openTab === 1
-                                        ? "text-white bg-" + color + "-600"
-                                        : "text-" + color + "-600 bg-white")
-                                }
-                                onClick={e => {
-                                    e.preventDefault();
-                                    setOpenTab(1);
-                                }}
-                                data-toggle="tab"
-                                href="#link1"
-                                role="tablist"
-                            >
-                                Profile
-                            </a>
-                        </li>
-                        <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-                            <a
-                                className={
-                                    "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
-                                    (openTab === 2
-                                        ? "text-white bg-" + color + "-600"
-                                        : "text-" + color + "-600 bg-white")
-                                }
-                                onClick={e => {
-                                    e.preventDefault();
-                                    setOpenTab(2);
-                                }}
-                                data-toggle="tab"
-                                href="#link2"
-                                role="tablist"
-                            >
-                                Settings
-                            </a>
-                        </li>
-                        <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-                            <a
-                                className={
-                                    "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
-                                    (openTab === 3
-                                        ? "text-white bg-" + color + "-600"
-                                        : "text-" + color + "-600 bg-white")
-                                }
-                                onClick={e => {
-                                    e.preventDefault();
-                                    setOpenTab(3);
-                                }}
-                                data-toggle="tab"
-                                href="#link3"
-                                role="tablist"
-                            >
-                                Options
-                            </a>
-                        </li>
-                    </ul>
+                    <div className="grid lg:grid-cols-2 grid-cols-1 justify-between grid-cols-1">
+                        
+                    <h1 className="-mb-px mr-2 last:mr-0 basis-1/4 font-bold text-2xl">More Discover</h1>
+
+                        <ul
+                            className="flex mb-0 list-none pt-3 pb-4"
+                            role="tablist"
+                        >
+                            <li className="-mb-px mr-2 last:mr-0 text-center">
+                                <a
+                                    className={
+                                        "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                                        (openTab === 1
+                                            ? "text-white bg-" + color + "-600"
+                                            : "text-" + color + "-600 bg-white")
+                                    }
+                                    onClick={e => {
+                                        e.preventDefault();
+                                        setOpenTab(1);
+                                    }}
+                                    data-toggle="tab"
+                                    href="#link1"
+                                    role="tablist"
+                                >
+                                    On-Sell
+                                </a>
+                            </li>
+                            <li className="-mb-px mr-2 basis-1/4 last:mr-0 text-center">
+                                <a
+                                    className={
+                                        "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                                        (openTab === 2
+                                            ? "text-white bg-" + color + "-600"
+                                            : "text-" + color + "-600 bg-white")
+                                    }
+                                    onClick={e => {
+                                        e.preventDefault();
+                                        setOpenTab(2);
+                                    }}
+                                    data-toggle="tab"
+                                    href="#link2"
+                                    role="tablist"
+                                >
+                                    Trand
+                                </a>
+                            </li>
+                            <li className="-mb-px mr-2 basis-1/4 last:mr-0 flex-auto text-center">
+                                <a
+                                    className={
+                                        "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                                        (openTab === 3
+                                            ? "text-white bg-" + color + "-600"
+                                            : "text-" + color + "-600 bg-white")
+                                    }
+                                    onClick={e => {
+                                        e.preventDefault();
+                                        setOpenTab(3);
+                                    }}
+                                    data-toggle="tab"
+                                    href="#link3"
+                                    role="tablist"
+                                >
+                                    Hot-Sell
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
                     <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
                         <div className="px-4 py-5 flex-auto">
                             <div className="tab-content tab-space">
