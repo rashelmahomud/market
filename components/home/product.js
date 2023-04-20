@@ -1,14 +1,14 @@
 import { useState } from "react";
 
-const Product = () => {
+const Product = ({ title }) => {
     const [openTab, setOpenTab] = useState(1);
     return (
         <>
             <div className="flex flex-wrap mx-auto lg:mx-28 lg:p-20 p-3">
                 <div className="w-full">
                     <div className="grid lg:grid-cols-2 grid-cols-1 justify-between grid-cols-1">
-                        
-                    <h1 className="-mb-px mr-2 last:mr-0 basis-1/4 font-bold text-2xl">More Discover</h1>
+
+                        <h1 className="-mb-px mr-2 last:mr-0 basis-1/4 font-bold text-2xl">{title}</h1>
 
                         <ul
                             className="flex mb-0 list-none pt-3 pb-4"
