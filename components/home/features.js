@@ -165,7 +165,7 @@ const Features = ({ products }) => {
                             <div className="tab-content tab-space">
                                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
 
-                                    <div className="grid lg:grid-cols-6 gap-3">
+                                    <div className="grid lg:grid-cols-6 md:grid-cols-2 gap-3">
                                         {
                                             products?.slice(0, 6).map((product) => (
                                                 <div key={product._id} >
@@ -184,55 +184,84 @@ const Features = ({ products }) => {
 
                                 </div>
                                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                                    <p>
-                                        Completely synergize resource taxing relationships via
-                                        premier niche markets. Professionally cultivate one-to-one
-                                        customer service with robust ideas.
-                                        <br />
-                                        <br />
-                                        Dynamically innovate resource-leveling customer service for
-                                        state of the art customer service.
-                                    </p>
+                                    <div className="grid lg:grid-cols-6 md:grid-cols-2 gap-3">
+                                        {
+                                            products?.slice(2, 8).map((product) => (
+                                                <div key={product._id} >
+
+                                                    <Image className="mx-auto" src={product.image} width={100} height={100} alt="product" />
+                                                    <h1 className="font-semibold my-3 text-center">{product.title}</h1>
+                                                    <p className="text-center"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
+
+                                                </div>
+                                            ))
+                                        }
+
+                                    </div>
                                 </div>
                                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
-                                    <p>
-                                        Efficiently unleash cross-media information without
-                                        cross-media value. Quickly maximize timely deliverables for
-                                        real-time schemas.
-                                        <br />
-                                        <br /> Dramatically maintain clicks-and-mortar solutions
-                                        without functional solutions.
-                                    </p>
+                                    <div className="grid lg:grid-cols-6 md:grid-cols-2 gap-3">
+                                        {
+                                            products?.slice(4, 10).map((product) => (
+                                                <div key={product._id} >
+
+                                                    <Image className="mx-auto" src={product.image} width={100} height={100} alt="product" />
+                                                    <h1 className="font-semibold my-3 text-center">{product.title}</h1>
+                                                    <p className="text-center"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
+
+                                                </div>
+                                            ))
+                                        }
+
+                                    </div>
                                 </div>
                                 <div className={openTab === 4 ? "block" : "hidden"} id="link3">
-                                    <p>
-                                        Efficiently unleash cross-media information without
-                                        cross-media value. Quickly maximize timely deliverables for
-                                        real-time schemas.
-                                        <br />
-                                        <br /> Dramatically maintain clicks-and-mortar solutions
-                                        without functional solutions.
-                                    </p>
+                                    <div className="grid lg:grid-cols-6 md:grid-cols-2 gap-3">
+                                        {
+                                            products?.slice(6, 11).map((product) => (
+                                                <div key={product._id} >
+
+                                                    <Image className="mx-auto" src={product.image} width={100} height={100} alt="product" />
+                                                    <h1 className="font-semibold my-3 text-center">{product.title}</h1>
+                                                    <p className="text-center"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
+
+                                                </div>
+                                            ))
+                                        }
+
+                                    </div>
                                 </div>
                                 <div className={openTab === 5 ? "block" : "hidden"} id="link3">
-                                    <p>
-                                        Efficiently unleash cross-media information without
-                                        cross-media value. Quickly maximize timely deliverables for
-                                        real-time schemas.
-                                        <br />
-                                        <br /> Dramatically maintain clicks-and-mortar solutions
-                                        without functional solutions.
-                                    </p>
+                                    <div className="grid lg:grid-cols-6 md:grid-cols-2 gap-3">
+                                        {
+                                            products?.slice(2, 8).map((product) => (
+                                                <div key={product._id} >
+
+                                                    <Image className="mx-auto" src={product.image} width={100} height={100} alt="product" />
+                                                    <h1 className="font-semibold my-3 text-center">{product.title}</h1>
+                                                    <p className="text-center"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
+
+                                                </div>
+                                            ))
+                                        }
+
+                                    </div>
                                 </div>
                                 <div className={openTab === 6 ? "block" : "hidden"} id="link3">
-                                    <p>
-                                        Efficiently unleash cross-media information without
-                                        cross-media value. Quickly maximize timely deliverables for
-                                        real-time schemas.
-                                        <br />
-                                        <br /> Dramatically maintain clicks-and-mortar solutions
-                                        without functional rashel.
-                                    </p>
+                                    <div className="grid lg:grid-cols-6 md:grid-cols-2 gap-3">
+                                        {
+                                            products?.slice(3, 9).map((product) => (
+                                                <div key={product._id} >
+
+                                                    <Image className="mx-auto" src={product.image} width={100} height={100} alt="product" />
+                                                    <h1 className="font-semibold my-3 text-center">{product.title}</h1>
+                                                    <p className="text-center"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
+
+                                                </div>
+                                            ))
+                                        }
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
