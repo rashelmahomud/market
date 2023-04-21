@@ -1,5 +1,11 @@
 import Image from "next/image";
 import { useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+
 
 const Products = ({ title, products }) => {
 
@@ -81,20 +87,39 @@ const Products = ({ title, products }) => {
                             <div className="tab-content tab-space">
                                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
 
-                                    <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-10">
+                                    {/* <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-10"> */}
+
+                                    <Swiper
+                                        spaceBetween={50}
+                                        slidesPerView={5}
+                                        onSlideChange={() => console.log('slide change')}
+                                        onSwiper={(swiper) => console.log(swiper)}
+                                    >
+
                                         {
-                                            products?.slice(3, 7).map((product) => (
-                                                <div key={product._id} className="border rounded lg:p-5 p-3" >
+                                            products?.map((product) => (
+                                                <SwiperSlide>
+                                                    <div key={product._id} className="border rounded lg:p-5 p-3" >
 
-                                                    <Image className="mx-auto" src={product.image} width={200} height={200} alt="product" />
-                                                    <h1 className="font-semibold my-3 text-center">{product.title}</h1>
-                                                    <p className="text-center font-semibold"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
+                                                        <Image className="mx-auto" src={product.image} width={200} height={200} alt="product" />
+                                                        <h1 className="font-semibold my-3 text-center">{product.title}</h1>
+                                                        <p className="text-center font-semibold"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
 
-                                                </div>
+                                                    </div>
+                                                </SwiperSlide>
                                             ))
                                         }
-                                    </div>
-                                    Hello Dear 
+
+
+
+
+                                        ...
+                                    </Swiper>
+
+
+
+                                    {/* </div> */}
+                                    Hello Dear
 
                                 </div>
                                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
