@@ -9,14 +9,15 @@ import Count from '@/components/home/count';
 import Product from '../components/home/product';
 import Features from '@/components/home/features';
 const inter = Inter({ subsets: ['latin'] })
-export default function Home({ data }) {
 
 
+
+export default function Home({ data, products }) {
 
   return (
     <Formate>
 
-      <Features />
+      <Features products={products} />
 
       <Product title={'Tranding Product'} />
       <Features3 />
@@ -32,11 +33,21 @@ export default function Home({ data }) {
 }
 
 
-export async function getServerSideProps(context) {
+
+export async function getServerSideProps() {
+
   const res = await fetch('http://localhost:5000/market')
-  const data = await res.json()
+  const resProduct = await fetch('http://localhost:5000/product')
+
+  const data = await res.json();
+  const products = await resProduct.json();
+
 
   return {
-    props: { data: data }
+    props: {
+      data,
+      products
+
+    }
   }
 }

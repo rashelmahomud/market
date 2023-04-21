@@ -8,8 +8,8 @@ import icon5 from '../../public/new-project/icon2-1.png'
 import icon6 from '../../public/new-project/icon5.png'
 import Image from "next/image";
 
-const Features = () => {
-
+const Features = ({ products }) => {
+    console.log(products)
     const [openTab, setOpenTab] = useState(1);
     return (
         <>
@@ -164,14 +164,23 @@ const Features = () => {
                         <div className="px-4 py-5 flex-auto">
                             <div className="tab-content tab-space">
                                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
-                                    <p>
-                                        Collaboratively administrate empowered markets via
-                                        plug-and-play networks. Dynamically procrastinate B2C users
-                                        after installed base benefits.
-                                        <br />
-                                        <br /> Dramatically visualize customer directed convergence
-                                        without revolutionary ROI.
-                                    </p>
+
+                                    <div className="grid lg:grid-cols-6">
+                                        {
+                                            products?.map((product) => (
+                                                <div key={product._id} >
+
+                                                    <Image src={product.image} width={100} height={100} alt="product" />
+                                                    <h1>{product.doc}</h1>
+
+                                                </div>
+                                            ))
+                                        }
+
+                                    </div>
+
+
+
                                 </div>
                                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
                                     <p>

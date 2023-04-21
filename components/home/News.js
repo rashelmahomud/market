@@ -4,7 +4,7 @@ import { BsFillChatLeftFill } from 'react-icons/bs';
 import { BsStopwatch } from 'react-icons/bs';
 import moment from 'moment';
 const News = ({ data }) => {
-
+    
     // const today = new Date();
     // const date = today.getDate() + '-' + "0"+ parseInt(today.getMonth() + 1)  + '-' + today.getFullYear();
 
