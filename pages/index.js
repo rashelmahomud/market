@@ -7,6 +7,7 @@ import Features2 from '@/components/home/features2';
 import Features3 from '../components/home/Features3';
 import Count from '@/components/home/count';
 import Product from '../components/home/product';
+import Products from '../components/home/products';
 import Features from '@/components/home/features';
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,7 +23,7 @@ export default function Home({ data, products }) {
       <Product products={products} title={'Tranding Product'} />
       <Features3 />
       <Features2 />
-      <Product title={'Discover More'} />
+      <Products products={products} title={'Discover More'} />
       <Features1 />
       <Count />
       <News data={data} />

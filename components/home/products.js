@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const Product = ({ title, products }) => {
+const Products = ({ title, products }) => {
 
     const [openTab, setOpenTab] = useState(1);
     return (
@@ -80,6 +80,7 @@ const Product = ({ title, products }) => {
                         <div className="px-4 py-5 flex-auto">
                             <div className="tab-content tab-space">
                                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
+
                                     <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-10">
                                         {
                                             products?.slice(3, 7).map((product) => (
@@ -93,6 +94,7 @@ const Product = ({ title, products }) => {
                                             ))
                                         }
                                     </div>
+                                    Hello Dear 
 
                                 </div>
                                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
@@ -113,7 +115,7 @@ const Product = ({ title, products }) => {
                                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
                                     <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-10">
                                         {
-                                            products?.slice(1, 9).map((product) => (
+                                            products?.slice(1, 6).map((product) => (
                                                 <div key={product._id} className="border rounded lg:p-5 p-3" >
 
                                                     <Image className="mx-auto" src={product.image} width={200} height={200} alt="product" />
@@ -134,7 +136,7 @@ const Product = ({ title, products }) => {
     );
 };
 
-export default Product;
+export default Products;
 
 
 
