@@ -9,7 +9,7 @@ import icon6 from '../../public/new-project/icon5.png'
 import Image from "next/image";
 
 const Features = ({ products }) => {
-    console.log(products)
+    
     const [openTab, setOpenTab] = useState(1);
     return (
         <>

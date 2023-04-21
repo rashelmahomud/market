@@ -1,6 +1,10 @@
+import Image from "next/image";
 import { useState } from "react";
 
-const Product = ({ title }) => {
+const Product = ({ title, products }) => {
+
+    console.log(products, 'Hello get')
+
     const [openTab, setOpenTab] = useState(1);
     return (
         <>
@@ -78,35 +82,50 @@ const Product = ({ title }) => {
                         <div className="px-4 py-5 flex-auto">
                             <div className="tab-content tab-space">
                                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
-                                    <p>
-                                        Collaboratively administrate empowered markets via
-                                        plug-and-play networks. Dynamically procrastinate B2C users
-                                        after installed base benefits.
-                                        <br />
-                                        <br /> Dramatically visualize customer directed convergence
-                                        without revolutionary ROI.
-                                    </p>
+                                    <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-10">
+                                        {
+                                            products?.slice(3, 7).map((product) => (
+                                                <div key={product._id} className="border rounded lg:p-5 p-3" >
+
+                                                    <Image className="mx-auto" src={product.image} width={200} height={200} alt="product" />
+                                                    <h1 className="font-semibold my-3 text-center">{product.title}</h1>
+                                                    <p className="text-center font-semibold"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
+
+                                                </div>
+                                            ))
+                                        }
+                                    </div>
+
                                 </div>
                                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
-                                    <p>
-                                        Completely synergize resource taxing relationships via
-                                        premier niche markets. Professionally cultivate one-to-one
-                                        customer service with robust ideas.
-                                        <br />
-                                        <br />
-                                        Dynamically innovate resource-leveling customer service for
-                                        state of the art customer service.
-                                    </p>
+                                    <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-10">
+                                        {
+                                            products?.slice(1, 6).map((product) => (
+                                                <div key={product._id} className="border rounded lg:p-5 p-3" >
+
+                                                    <Image className="mx-auto" src={product.image} width={200} height={200} alt="product" />
+                                                    <h1 className="font-semibold my-3 text-center">{product.title}</h1>
+                                                    <p className="text-center font-semibold"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
+
+                                                </div>
+                                            ))
+                                        }
+                                    </div>
                                 </div>
                                 <div className={openTab === 3 ? "block" : "hidden"} id="link3">
-                                    <p>
-                                        Efficiently unleash cross-media information without
-                                        cross-media value. Quickly maximize timely deliverables for
-                                        real-time schemas.
-                                        <br />
-                                        <br /> Dramatically maintain clicks-and-mortar solutions
-                                        without functional solutions.
-                                    </p>
+                                    <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-10">
+                                        {
+                                            products?.slice(6, 11).map((product) => (
+                                                <div key={product._id} className="border rounded lg:p-5 p-3" >
+
+                                                    <Image className="mx-auto" src={product.image} width={200} height={200} alt="product" />
+                                                    <h1 className="font-semibold my-3 text-center">{product.title}</h1>
+                                                    <p className="text-center font-semibold"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
+
+                                                </div>
+                                            ))
+                                        }
+                                    </div>
                                 </div>
                             </div>
                         </div>

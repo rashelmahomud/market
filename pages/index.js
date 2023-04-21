@@ -19,7 +19,7 @@ export default function Home({ data, products }) {
 
       <Features products={products} />
 
-      <Product title={'Tranding Product'} />
+      <Product products={products} title={'Tranding Product'} />
       <Features3 />
       <Features2 />
       <Product title={'Discover More'} />
