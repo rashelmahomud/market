@@ -9,6 +9,7 @@ import Count from '@/components/home/count';
 import Product from '../components/home/product';
 import Products from '../components/home/products';
 import Features from '@/components/home/features';
+import Banner from '@/components/home/banner';
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -18,6 +19,7 @@ export default function Home({ data, products }) {
   return (
     <Formate>
 
+      <Banner />
       <Features products={products} />
 
       <Product products={products} title={'Tranding Product'} />

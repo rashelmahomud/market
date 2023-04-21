@@ -9,6 +9,7 @@ import 'swiper/css';
 
 const Products = ({ title, products }) => {
 
+
     const [openTab, setOpenTab] = useState(1);
     return (
         <>
@@ -109,10 +110,6 @@ const Products = ({ title, products }) => {
                                                 </SwiperSlide>
                                             ))
                                         }
-
-
-
-
                                         ...
                                     </Swiper>
 
