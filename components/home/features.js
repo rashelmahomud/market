@@ -165,13 +165,14 @@ const Features = ({ products }) => {
                             <div className="tab-content tab-space">
                                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
 
-                                    <div className="grid lg:grid-cols-6">
+                                    <div className="grid lg:grid-cols-6 gap-3">
                                         {
-                                            products?.map((product) => (
+                                            products?.slice(0, 6).map((product) => (
                                                 <div key={product._id} >
 
-                                                    <Image src={product.image} width={100} height={100} alt="product" />
-                                                    <h1>{product.doc}</h1>
+                                                    <Image className="mx-auto" src={product.image} width={100} height={100} alt="product" />
+                                                    <h1 className="font-semibold my-3 text-center">{product.title}</h1>
+                                                    <p className="text-center"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
 
                                                 </div>
                                             ))
