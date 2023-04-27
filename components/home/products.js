@@ -97,6 +97,7 @@ const Products = ({ title, products }) => {
                                         onSwiper={(swiper) => console.log(swiper)}
                                     >
 
+
                                         {
                                             products?.map((product) => (
                                                 <SwiperSlide>
@@ -110,13 +111,14 @@ const Products = ({ title, products }) => {
                                                 </SwiperSlide>
                                             ))
                                         }
+
                                         ...
                                     </Swiper>
 
 
 
                                     {/* </div> */}
-                                    Hello Dear
+                                    HELLO RASHEL MAHOMUD
 
                                 </div>
                                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
