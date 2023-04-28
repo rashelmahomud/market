@@ -1,19 +1,20 @@
+import Head from "next/head";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
 const NewsDetails = ({ post }) => {
-  console.log(post);
   const router = useRouter()
   const { id } = router.query
 
   const newNews = post.find((x) => x._id === id);
 
   if (!newNews) {
-    return <p>News Note make..</p>
+    return <p>News NOT Founds....</p>
   }
 
   return (
     <div>
+      <Head><title> Market /News Details</title></Head>
 
       <div className="shadow relative overflow-hidden">
         <Image className="w-96 transition duration-300 ease-in-out hover:scale-110" src={newNews.img1} width={500} height={300} alt="product" />
