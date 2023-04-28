@@ -14,7 +14,7 @@ const Navigation = () => {
         { id: 1, name: "HOME", link: "/" },
         { id: 2, name: "SERVICE", link: "/" },
         { id: 3, name: "ABOUT", link: "/" },
-        { id: 4, name: "CONTACT", link: "/" },
+        { id: 4, name: "CONTACT", link: "/news" },
     ]
     return (
         <div className='shadow-md w-full fixed z-10 top-0 left-0'>

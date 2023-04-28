@@ -1,7 +1,6 @@
 import { Inter } from 'next/font/google'
 import Formate from '../components/layout/formate';
 import Mlogo from '../components/home/mlogo';
-import News from '@/components/home/News';
 import Features1 from '@/components/home/features1';
 import Features2 from '@/components/home/features2';
 import Features3 from '../components/home/Features3';
@@ -10,6 +9,7 @@ import Product from '../components/home/product';
 import Products from '../components/home/products';
 import Features from '@/components/home/features';
 import Banner from '@/components/home/banner';
+import News from './news';
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -28,6 +28,7 @@ export default function Home({ data, products }) {
       <Products products={products} title={'Discover More'} />
       <Features1 />
       <Count />
+
       <News data={data} />
 
       <Mlogo />
