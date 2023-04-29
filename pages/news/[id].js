@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineArrowLeft } from 'react-icons/ai';
+import { AiOutlineUser } from 'react-icons/ai';
 import { useRouter } from "next/router";
 import Footer from "../footer";
 
@@ -34,12 +35,20 @@ const NewsDetails = ({ post }) => {
 
           <div className="shadow relative overflow-hidden lg:px-20">
             <Image className="w-96 transition duration-300 ease-in-out hover:scale-110" src={newNews.img1} width={500} height={300} alt="product" />
-            <div className="lg:p-10 p-3">
 
-              <h1 className="text-xl font-semibold text-blue-600">{newNews.title}</h1>
+            <div className="bg-gray-200" >
 
-
-              <p className="text-2xl font-bold mt-3">{newNews.dec}</p>
+              <div className="lg:p-10 p-3 ">
+                <p className="flex items-center text-5xl bg-gray-400 w-16 h-16 p-2 rounded-full"><AiOutlineUser /></p>
+                <span className="p-3 my-2">Cztql</span>
+                <hr className="w-16 mx-3 m-2" />
+                <span className="px-3">0</span>
+              </div>
+              <div>
+                <span>Electronics</span>
+                <h2>Seating Collection Inspiration Is Not Enough For People</h2>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem…</p>
+              </div>
 
             </div>
 
