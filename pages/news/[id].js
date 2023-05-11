@@ -3,8 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineArrowLeft } from 'react-icons/ai';
 import { AiOutlineUser } from 'react-icons/ai';
+import { BsFillChatLeftFill } from 'react-icons/bs';
+import { BsSearch } from 'react-icons/bs';
 import { useRouter } from "next/router";
 import Footer from "../footer";
+import Header from "../header";
 
 const NewsDetails = ({ post }) => {
   const router = useRouter()
@@ -19,6 +22,7 @@ const NewsDetails = ({ post }) => {
   return (
     <div>
       <Head><title> Market /News Details</title></Head>
+      <Header></Header>
 
       <div>
         <div className="flex gap-5 items-center font-semibold lg:px-20 p-10 bg-gray-100 my-10 lg:mt-20">
@@ -26,33 +30,46 @@ const NewsDetails = ({ post }) => {
           <p><AiOutlineArrowLeft /></p>
           <Link href={''}>market</Link>
         </div>
-        <div>
-          <div className="text-3xl font-bold my-10 mx-20">
-            <h1 className="pb-5">Category: Speaker</h1>
-            <hr />
 
-          </div>
-
-          <div className="shadow relative overflow-hidden lg:px-20">
-            <Image className="w-96 transition duration-300 ease-in-out hover:scale-110" src={newNews.img1} width={500} height={300} alt="product" />
-
-            <div className="bg-gray-200" >
-
-              <div className="lg:p-10 p-3 ">
-                <p className="flex items-center text-5xl bg-gray-400 w-16 h-16 p-2 rounded-full"><AiOutlineUser /></p>
-                <span className="p-3 my-2">Cztql</span>
-                <hr className="w-16 mx-3 m-2" />
-                <span className="px-3">0</span>
-              </div>
-              <div>
-                <span>Electronics</span>
-                <h2>Seating Collection Inspiration Is Not Enough For People</h2>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem…</p>
-              </div>
+        <div className="grid lg:grid-cols-3 gap-4">
+          <div className="col-span-2">
+            <div className="text-3xl font-bold my-10 mx-20">
+              <h1 className="pb-5">Category: Speaker</h1>
+              <hr />
 
             </div>
 
+            <div className="shadow relative overflow-hidden lg:px-20">
+              <Image className="w-96 transition duration-300 ease-in-out hover:scale-110" src={newNews.img1} width={500} height={300} alt="product" />
+
+              <div className="bg-gray-100 flex" >
+
+                <div className="lg:p-10 p-3 ">
+                  <p className="flex items-center text-5xl bg-gray-400 w-16 h-16 p-2 rounded-full"><AiOutlineUser /></p>
+                  <span className="p-3 my-2">Cztql</span>
+                  <hr className="w-16 mx-3 m-2" />
+                  <span className="px-3">0</span>
+                </div>
+                <div className="mt-32 p-10">
+                  <span className="flex items-center gap-3 text-gray-600"> <BsFillChatLeftFill /> Electronics</span>
+                  <h2 className="font-bold text-2xl text-gray-600 my-3">Seating Collection Inspiration Is Not Enough For People</h2>
+                  <p className="font-semibold text-gray-600">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem…</p>
+
+                  <button className="bg-green-700 p-3 mt-3 text-white font-bold ">continue Reading</button>
+                </div>
+
+              </div>
+
+            </div>
           </div>
+          <div>
+
+            <div className="p-10 border w-96 flex">
+              <input type="text" className="border rounded lg:w-96 p-3" placeholder="Enter your Mail Here.." />
+              <button className="bg-yellow-300 p-3 text-white font-bold"><BsSearch /></button>
+            </div>
+          </div>
+
         </div>
 
       </div>
