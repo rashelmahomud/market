@@ -64,10 +64,54 @@ const NewsDetails = ({ post }) => {
           </div>
           <div>
 
-            <div className="p-10 border w-96 flex">
+            <div className="p-10 mt-10 border w-96 flex">
               <input type="text" className="border rounded lg:w-96 p-3" placeholder="Enter your Mail Here.." />
               <button className="bg-yellow-300 p-3 text-white font-bold"><BsSearch /></button>
             </div>
+            <div className="border p-5 my-3 w-96">
+              <h3 className="font-semibold text-xl mb-3 border-l-4 px-2">Recent Posts</h3>
+              <Link href='#'>Seating Collection Inspiration Is Not Enough For People</Link><hr />
+              <br />
+              <Link href='#'>Exterior Ideas: 10 Colored Fiber Garden Seats</Link><hr />
+              <br />
+              <Link href='#'>Creative Water Features And Exterior Design</Link><hr />
+              <br />
+              <Link href='#' className="">Seating Collection Inspiration Is Not Enough For People</Link><hr />
+
+            </div>
+            <div className="border p-5 my-5 w-96 ">
+              <h3 className="font-semibold text-xl mb-3 border-l-4 px-2">Recent Commante</h3>
+              <Link href='#'>Maria on Xpeed computer</Link><hr />
+              <br />
+              <Link href='#'>Maria on Xpeed Laptop</Link><hr />
+              <br />
+              <Link href='#'> Maria on Fuji Film Camera</Link><hr />
+              <br />
+              <Link href='#'>Maria on Xpeed Headset</Link><hr />
+              <br />
+              <Link href='#' className="">Ryan on Drone WI FI FPV</Link><hr />
+
+              
+              
+             
+              
+              
+
+            </div>
+            <div className="border p-5 my-5 w-96">
+              <h3 className="font-semibold text-xl mb-3 border-4 border-l-indigo-400 px-2">Archives</h3>
+              <Link href='#'>May 2018</Link><hr />
+              <br />
+              <Link href='#'>April 2018</Link><hr />
+              <br />
+              <Link href='#'>March 2018</Link><hr />
+
+
+
+
+            </div>
+
+
           </div>
 
         </div>
