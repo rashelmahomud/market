@@ -50,7 +50,7 @@ const NewsDetails = ({ post }) => {
                   <hr className="w-16 mx-3 m-2" />
                   <span className="px-3">0</span>
                 </div>
-                <div className="mt-32 p-10">
+                <div className="mt-32 p-3 lg:p-10">
                   <span className="flex items-center gap-3 text-gray-600"> <BsFillChatLeftFill /> Electronics</span>
                   <h2 className="font-bold text-2xl text-gray-600 my-3">Seating Collection Inspiration Is Not Enough For People</h2>
                   <p className="font-semibold text-gray-600">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem…</p>
@@ -91,12 +91,6 @@ const NewsDetails = ({ post }) => {
               <br />
               <Link href='#' className="">Ryan on Drone WI FI FPV</Link><hr />
 
-              
-              
-             
-              
-              
-
             </div>
             <div className="border p-5 my-5 w-96">
               <h3 className="font-semibold text-xl mb-3 border-4 border-l-indigo-400 px-2">Archives</h3>
@@ -105,10 +99,14 @@ const NewsDetails = ({ post }) => {
               <Link href='#'>April 2018</Link><hr />
               <br />
               <Link href='#'>March 2018</Link><hr />
-
-
-
-
+            </div>
+            <div className="border p-5 my-5 w-96">
+              <h3 className="font-semibold text-xl mb-3 border-4 border-l-indigo-400 px-2">Categoris</h3>
+              <Link href='#'>Computer</Link><hr />
+              <br />
+              <Link href='#'>Electronics</Link><hr />
+              <br />
+              <Link href='#'>Seakers</Link><hr />
             </div>
 
 
