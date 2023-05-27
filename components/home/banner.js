@@ -1,11 +1,12 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import styles from '../../styles/banner.module.css';
 import img from '../../public/new-project/Banner.jpg';
 import img1 from '../../public/new-project/Banner1.jpg';
 import img2 from '../../public/new-project/Banner2.jpg';
+import img3 from '../../public/new-project/img3.png';
 // Import Swiper styles
-import 'swiper/css';
+// import 'swiper/css';
 import Image from 'next/image';
 
 const Banner = () => {
@@ -17,21 +18,32 @@ const Banner = () => {
             onSwiper={(swiper) => console.log(swiper)}
         >
 
-            <SwiperSlide>
+            <SwiperSlide className={styles.gallery}> 
 
-                <Image src={img} alt='image' />
+            <div className={styles.gallery}>
+            <Image className='w-full h-1/2 absolute' src={img3} alt='image' />
+            <Image className='w-full h-1/2  ' src={img1} alt='image' />
+        </div>
+
             </SwiperSlide>
 
             <SwiperSlide>
-                <Image src={img1} alt='image' />
+            <div className={styles.gallery}>
+            <Image className='w-full h-1/2 absolute' src={img2} alt='image' />
+            <Image className='w-full h-1/2  ' src={img1} alt='image' />
+        </div>
 
             </SwiperSlide>
 
             <SwiperSlide>
-                <Image src={img2} alt='image' />
+            <div className={styles.gallery}>
+            <Image className='w-full h-1/2 absolute' src={img1} alt='image' />
+            <Image className='w-full h-1/2  ' src={img2} alt='image' />
+        </div>
 
             </SwiperSlide>
         </Swiper>
+       
     )
 };
 

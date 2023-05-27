@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "i": "^0.3.7",
     "install": "^0.13.0",
     "moment": "^2.29.4",
