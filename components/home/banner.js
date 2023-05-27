@@ -17,8 +17,6 @@ const Banner = () => {
             onSwiper={(swiper) => console.log(swiper)}
         >
 
-
-
             <SwiperSlide>
 
                 <Image src={img} alt='image' />
@@ -33,11 +31,6 @@ const Banner = () => {
                 <Image src={img2} alt='image' />
 
             </SwiperSlide>
-
-
-
-
-            ...
         </Swiper>
     )
 };
