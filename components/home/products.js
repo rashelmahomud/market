@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
+import Link from "next/link";
 
 
 const Products = ({ title, products }) => {
@@ -102,10 +103,11 @@ const Products = ({ title, products }) => {
                                             products?.map((product) => (
                                                 <SwiperSlide>
                                                     <div key={product._id} className="border rounded lg:p-5 p-3" >
-
-                                                        <Image className="mx-auto" src={product.image} width={200} height={200} alt="product" />
-                                                        <h1 className="font-semibold my-3 text-center">{product.title}</h1>
-                                                        <p className="text-center font-semibold"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
+                                                        <Link href={`/products/${product._id}`}>
+                                                            <Image className="mx-auto" src={product.image} width={200} height={200} alt="product" />
+                                                            <h1 className="font-semibold my-3 text-center">{product.title}</h1>
+                                                            <p className="text-center font-semibold"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
+                                                        </Link>
 
                                                     </div>
                                                 </SwiperSlide>
@@ -126,11 +128,11 @@ const Products = ({ title, products }) => {
                                         {
                                             products?.slice(2, 6).map((product) => (
                                                 <div key={product._id} className="border rounded lg:p-5 p-3" >
-
-                                                    <Image className="mx-auto" src={product.image} width={200} height={200} alt="product" />
-                                                    <h1 className="font-semibold my-3 text-center">{product.title}</h1>
-                                                    <p className="text-center font-semibold"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
-
+                                                    <Link href={`/products/${product._id}`}>
+                                                        <Image className="mx-auto" src={product.image} width={200} height={200} alt="product" />
+                                                        <h1 className="font-semibold my-3 text-center">{product.title}</h1>
+                                                        <p className="text-center font-semibold"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
+                                                    </Link>
                                                 </div>
                                             ))
                                         }
@@ -141,11 +143,11 @@ const Products = ({ title, products }) => {
                                         {
                                             products?.slice(1, 6).map((product) => (
                                                 <div key={product._id} className="border rounded lg:p-5 p-3" >
-
-                                                    <Image className="mx-auto" src={product.image} width={200} height={200} alt="product" />
-                                                    <h1 className="font-semibold my-3 text-center">{product.title}</h1>
-                                                    <p className="text-center font-semibold"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
-
+                                                    <Link href={`/products/${product._id}`}>
+                                                        <Image className="mx-auto" src={product.image} width={200} height={200} alt="product" />
+                                                        <h1 className="font-semibold my-3 text-center">{product.title}</h1>
+                                                        <p className="text-center font-semibold"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
+                                                    </Link>
                                                 </div>
                                             ))
                                         }
