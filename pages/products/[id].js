@@ -13,6 +13,7 @@ const productDetails = ({ post }) => {
 
             <Image className="w-96 transition duration-300 ease-in-out hover:scale-110" src={newNews.image} width={500} height={300} alt="product" />
 
+
         </div>
     )
 

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 const Product = ({ title, products }) => {
@@ -84,10 +85,11 @@ const Product = ({ title, products }) => {
                                         {
                                             products?.slice(3, 7).map((product) => (
                                                 <div key={product._id} className="border rounded lg:p-5 p-3" >
-
-                                                    <Image className="mx-auto" src={product.image} width={200} height={200} alt="product" />
-                                                    <h1 className="font-semibold my-3 text-center">{product.title}</h1>
-                                                    <p className="text-center font-semibold"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
+                                                    <Link href={`/tranding/${product._id}`}>
+                                                        <Image className="mx-auto" src={product.image} width={200} height={200} alt="product" />
+                                                        <h1 className="font-semibold my-3 text-center">{product.title}</h1>
+                                                        <p className="text-center font-semibold"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
+                                                    </Link>
 
                                                 </div>
                                             ))
@@ -100,11 +102,11 @@ const Product = ({ title, products }) => {
                                         {
                                             products?.slice(2, 6).map((product) => (
                                                 <div key={product._id} className="border rounded lg:p-5 p-3" >
-
-                                                    <Image className="mx-auto" src={product.image} width={200} height={200} alt="product" />
-                                                    <h1 className="font-semibold my-3 text-center">{product.title}</h1>
-                                                    <p className="text-center font-semibold"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
-
+                                                    <Link href={`/tranding/${product._id}`}>
+                                                        <Image className="mx-auto" src={product.image} width={200} height={200} alt="product" />
+                                                        <h1 className="font-semibold my-3 text-center">{product.title}</h1>
+                                                        <p className="text-center font-semibold"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
+                                                    </Link>
                                                 </div>
                                             ))
                                         }
@@ -115,11 +117,11 @@ const Product = ({ title, products }) => {
                                         {
                                             products?.slice(1, 9).map((product) => (
                                                 <div key={product._id} className="border rounded lg:p-5 p-3" >
-
-                                                    <Image className="mx-auto" src={product.image} width={200} height={200} alt="product" />
-                                                    <h1 className="font-semibold my-3 text-center">{product.title}</h1>
-                                                    <p className="text-center font-semibold"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
-
+                                                    <Link href={`/tranding/${product._id}`}>
+                                                        <Image className="mx-auto" src={product.image} width={200} height={200} alt="product" />
+                                                        <h1 className="font-semibold my-3 text-center">{product.title}</h1>
+                                                        <p className="text-center font-semibold"><span className="delete text-gray-300">$340.00</span>  {product.price}</p>
+                                                    </Link>
                                                 </div>
                                             ))
                                         }
