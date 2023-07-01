@@ -31,7 +31,7 @@ export default function Home({ data, products }) {
     </Formate>
   );
 }
-
+//https://market-shop-server.vercel.app/
 export async function getServerSideProps() {
   const res = await fetch("https://market-shop-server.vercel.app/market");
   const resProduct = await fetch(
