@@ -13,6 +13,25 @@ import News from "./news";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home({ data, products }) {
+  //https://market-shop-server.vercel.app/
+  async function getServerSideProps() {
+    const res = await fetch("https://market-shop-server.vercel.app/market");
+    const resProduct = await fetch(
+      "https://market-shop-server.vercel.app/product"
+    );
+
+    if (res && resProduct) {
+      const data = await res.json();
+      const products = await resProduct.json();
+      return {
+        props: {
+          data,
+          products,
+        },
+      };
+    }
+  }
+
   return (
     <Formate>
       <Banner />
@@ -30,23 +49,4 @@ export default function Home({ data, products }) {
       <Mlogo />
     </Formate>
   );
-}
-//https://market-shop-server.vercel.app/
-export async function getServerSideProps() {
-  const res = await fetch("https://market-shop-server.vercel.app/market");
-  const resProduct = await fetch(
-    "https://market-shop-server.vercel.app/product"
-  );
-
-  const data = await res.json();
-  const products = await resProduct.json();
-
-  if (data && products) {
-    return {
-      props: {
-        data,
-        products,
-      },
-    };
-  }
 }
