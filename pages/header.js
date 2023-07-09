@@ -8,12 +8,12 @@ import { FiDelete } from "react-icons/fi";
 const Navigation = () => {
   const [open, setOpen] = useState(false);
 
-  const links = [
-    { id: 1, name: "HOME", link: "/" },
-    { id: 2, name: "SERVICE", link: "/" },
-    { id: 3, name: "ABOUT", link: "/" },
-    { id: 4, name: "CONTACT", Link: "/news" },
-  ];
+  //   const links = [
+  //     { id: 1, name: "HOME", link: "/" },
+  //     { id: 2, name: "SERVICE", link: "/" },
+  //     { id: 3, name: "ABOUT", link: "/" },
+  //     { id: 4, name: "CONTACT", Link: "/news" },
+  //   ];
   return (
     <div className=" w-full fixed z-10 top-0 left-0 bg-gradient-to-r from-orange-200 from-10% via-orange-50 via-30% to-red-50 to-90%">
       <div className="lg:flex items-center justify-between  py-4 lg:px-10 px-10">
@@ -38,20 +38,20 @@ const Navigation = () => {
               : "top-[-490px] lg:opacity-100 opacity-0"
           }`}
         >
-          {links.map((link) => (
+          {/* {links.map((link) => (
             <li
               key={link.id}
               className="lg:ml-8 lg:my-0 my-7 text-xl cursor-pointer hover:border-b-2 duration-500 hover:text-blue-400 "
             >
               {link.name}{" "}
             </li>
-          ))}
-          {/* <div className="lg:ml-8 lg:my-0 my-7 text-xl cursor-pointer hover:border-b-2 duration-500 hover:text-blue-400 ">
+          ))} */}
+          <div className="lg:ml-8 lg:my-0 my-7 text-xl cursor-pointer hover:border-b-2 duration-500 hover:text-blue-400 ">
             <Link href="/news">Home</Link>
             <Link href="/news">service</Link>
             <Link href="/news">About</Link>
             <Link href="/news">Contract</Link>
-          </div> */}
+          </div>
 
           {/* <Button>LOGIN</Button> */}
           {/* <Button>GET STARTED</Button> */}

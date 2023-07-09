@@ -41,10 +41,12 @@ export async function getServerSideProps() {
   const data = await res.json();
   const products = await resProduct.json();
 
-  return {
-    props: {
-      data,
-      products,
-    },
-  };
+  if (data && products) {
+    return {
+      props: {
+        data,
+        products,
+      },
+    };
+  }
 }
