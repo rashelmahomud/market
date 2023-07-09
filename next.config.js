@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["https://i.ibb.co/"],
+    domains: ["i.ibb.co"],
 
     // remotePatterns: [
     //   {
