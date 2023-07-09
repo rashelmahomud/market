@@ -6,7 +6,22 @@ const productDetails = ({ post }) => {
   const { id } = router.query;
 
   const newNews = post.find((x) => x._id === id);
+  const getServerSideProps = async (context) => {
+    const { params } = context;
+    const { id } = params;
+    const res = await fetch(
+      `https://market-shop-server.vercel.app/product?id=${id}`
+    );
 
+    const products = await res.json();
+
+    return {
+      props: {
+        post: products,
+        id,
+      },
+    };
+  };
   return (
     <div>
       <Image
@@ -18,23 +33,6 @@ const productDetails = ({ post }) => {
       />
     </div>
   );
-};
-
-export const getServerSideProps = async (context) => {
-  const { params } = context;
-  const { id } = params;
-  const res = await fetch(
-    `https://market-shop-server.vercel.app/product?id=${id}`
-  );
-
-  const products = await res.json();
-
-  return {
-    props: {
-      post: products,
-      id,
-    },
-  };
 };
 
 export default productDetails;
