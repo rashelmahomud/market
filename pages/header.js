@@ -46,11 +46,31 @@ const Navigation = () => {
               {link.name}{" "}
             </li>
           ))} */}
-          <div className="lg:ml-8 lg:my-0 my-7 text-xl cursor-pointer hover:border-b-2 duration-500 hover:text-blue-400 ">
-            <Link href="/news">Home</Link>
-            <Link href="/news">service</Link>
-            <Link href="/news">About</Link>
-            <Link href="/news">Contract</Link>
+          <div className="lg:ml-8 lg:my-0 my-7 text-xl cursor-pointer">
+            <Link
+              className="p-2  hover:border-b-2 duration-500 hover:text-blue-400"
+              href="/news"
+            >
+              Home
+            </Link>
+            <Link
+              className="p-2  hover:border-b-2 duration-500 hover:text-blue-400"
+              href="/news"
+            >
+              service
+            </Link>
+            <Link
+              className="p-2  hover:border-b-2 duration-500 hover:text-blue-400"
+              href="/news"
+            >
+              About
+            </Link>
+            <Link
+              className="p-2  hover:border-b-2 duration-500 hover:text-blue-400"
+              href="/news"
+            >
+              Contract
+            </Link>
           </div>
 
           {/* <Button>LOGIN</Button> */}
