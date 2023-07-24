@@ -8,12 +8,6 @@ import { FiDelete } from "react-icons/fi";
 const Navigation = () => {
   const [open, setOpen] = useState(false);
 
-  //   const links = [
-  //     { id: 1, name: "HOME", link: "/" },
-  //     { id: 2, name: "SERVICE", link: "/" },
-  //     { id: 3, name: "ABOUT", link: "/" },
-  //     { id: 4, name: "CONTACT", Link: "/news" },
-  //   ];
   return (
     <div className=" w-full fixed z-10 top-0 left-0 bg-gradient-to-r from-orange-200 from-10% via-orange-50 via-30% to-red-50 to-90%">
       <div className="lg:flex items-center justify-between  py-4 lg:px-10 px-10">
@@ -32,46 +26,24 @@ const Navigation = () => {
         </div>
 
         <ul
-          className={`lg:flex md:items-center md:pb-3 pb-12 absolute lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in ${
+          className={`lg:flex md:items-center md:pb-3 pb-12 absolute lg:static lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in lg:ml-8 lg:my-0 my-7 text-xl cursor-pointer ${
             open
               ? "top-18 opacity-100"
               : "top-[-490px] lg:opacity-100 opacity-0"
           }`}
         >
-          {/* {links.map((link) => (
-            <li
-              key={link.id}
-              className="lg:ml-8 lg:my-0 my-7 text-xl cursor-pointer hover:border-b-2 duration-500 hover:text-blue-400 "
-            >
-              {link.name}{" "}
-            </li>
-          ))} */}
-          <div className="lg:ml-8 lg:my-0 my-7 text-xl cursor-pointer">
-            <Link
-              className="p-2  hover:border-b-2 duration-500 hover:text-blue-400"
-              href="/news"
-            >
-              Home
-            </Link>
-            <Link
-              className="p-2  hover:border-b-2 duration-500 hover:text-blue-400"
-              href="/news"
-            >
-              service
-            </Link>
-            <Link
-              className="p-2  hover:border-b-2 duration-500 hover:text-blue-400"
-              href="/news"
-            >
-              About
-            </Link>
-            <Link
-              className="p-2  hover:border-b-2 duration-500 hover:text-blue-400"
-              href="/news"
-            >
-              Contract
-            </Link>
-          </div>
+          <li className="p-2  hover:border-b-2 duration-500 hover:text-blue-400">
+            <Link href="/news">Home</Link>
+          </li>
+          <li className="p-2  hover:border-b-2 duration-500 hover:text-blue-400">
+            <Link href="/news">service</Link>
+          </li>
+          <li className="p-2  hover:border-b-2 duration-500 hover:text-blue-400">
+            <Link href="/news">About</Link>
+          </li>
+          <li className="p-2  hover:border-b-2 duration-500 hover:text-blue-400">
+            <Link href="/news">Contract</Link>
+          </li>
 
           {/* <Button>LOGIN</Button> */}
           {/* <Button>GET STARTED</Button> */}
