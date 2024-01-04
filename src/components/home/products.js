@@ -13,7 +13,7 @@ const Products = ({ title, products }) => {
     <>
       <div className="flex flex-wrap mx-auto lg:mx-28 lg:p-20 p-3">
         <div className="w-full">
-          <div className="grid lg:grid-cols-2 grid-cols-1 justify-between grid-cols-1">
+          <div className="grid lg:grid-cols-2 justify-between grid-cols-1">
             <h1 className="-mb-px mr-2 last:mr-0 basis-1/4 font-bold text-2xl">
               {title}
             </h1>
