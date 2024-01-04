@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-const Product = ({ title, products }) => {
+export const Product = ({ title, products }) => {
   const [openTab, setOpenTab] = useState(1);
   return (
     <>

@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Link from "next/link";
 
-const Products = ({ title, products }) => {
+export const Products = ({ title, products }) => {
   const [openTab, setOpenTab] = useState(1);
   return (
     <>
