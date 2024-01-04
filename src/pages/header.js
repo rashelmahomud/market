@@ -15,7 +15,7 @@ const Navigation = () => {
           <span className="text-3xl text-indigo-600">
             <i className="fa-solid fa-headphones"></i>
           </span>
-          Marketo.
+          <Link href="/">Marketo.</Link>
         </div>
 
         <div
@@ -32,16 +32,16 @@ const Navigation = () => {
               : "top-[-490px] lg:opacity-100 opacity-0"
           }`}
         >
-          <li className="p-2  hover:border-b-2 duration-500 hover:text-blue-400">
-            <Link href="/news">Home</Link>
+          <li className="p-2  hover:underline active duration-500 hover:text-blue-400">
+            <Link href="/">Home</Link>
           </li>
-          <li className="p-2  hover:border-b-2 duration-500 hover:text-blue-400">
+          <li className="p-2  hover:underline text-gray-400 duration-500 hover:text-blue-400">
             <Link href="/news">service</Link>
           </li>
-          <li className="p-2  hover:border-b-2 duration-500 hover:text-blue-400">
+          <li className="p-2  hover:underline text-gray-400 duration-500 hover:text-blue-400">
             <Link href="/news">About</Link>
           </li>
-          <li className="p-2  hover:border-b-2 duration-500 hover:text-blue-400">
+          <li className="p-2  hover:underline text-gray-400 duration-500 hover:text-blue-400">
             <Link href="/news">Contract</Link>
           </li>
 
