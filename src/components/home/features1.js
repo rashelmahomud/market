@@ -4,7 +4,7 @@ import Image from "next/image";
 import img1 from "../../../public/new-project/featured1-min.jpg";
 import img2 from "../../../public/new-project/featured2-min.jpg";
 
-const Features1 = () => {
+export const Features1 = () => {
   return (
     <div className="flex flex-wrap gap-10 justify-center p-10">
       {/* <Image src={img1} width={500} height={100} alt='features img' />
@@ -29,5 +29,3 @@ const Features1 = () => {
     </div>
   );
 };
-
-export default Features1;

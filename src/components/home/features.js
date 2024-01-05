@@ -10,7 +10,7 @@ import icon6 from "../../../public/new-project/icon5.png";
 
 import Image from "next/image";
 
-const Features = ({ products }) => {
+export const Features = ({ products }) => {
   const [openTab, setOpenTab] = useState(1);
   return (
     <>
@@ -315,5 +315,3 @@ const Features = ({ products }) => {
     </>
   );
 };
-
-export default Features;

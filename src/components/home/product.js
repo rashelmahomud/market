@@ -172,4 +172,3 @@ export const Product = ({ title, products }) => {
     </>
   );
 };
-export default Product;

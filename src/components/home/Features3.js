@@ -1,4 +1,4 @@
-const Features3 = () => {
+export const Features3 = () => {
   return (
     <div className="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 items-center mx-auto lg:p-10 p-3 gap-10 shadow w-9/12 mb-10">
       <div className="text-center border-r-2">
@@ -24,5 +24,3 @@ const Features3 = () => {
     </div>
   );
 };
-
-export default Features3;

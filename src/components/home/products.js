@@ -188,5 +188,3 @@ export const Products = ({ title, products }) => {
     </>
   );
 };
-
-export default Products;

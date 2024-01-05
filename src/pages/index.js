@@ -1,16 +1,17 @@
 import { Inter } from "next/font/google";
-
 import News from "./news";
 import Formate from "../components/layout/formate";
-import Banner from "../components/home/banner";
-import Features from "../components/home/features";
-import Product from "../components/home/product";
-import Features2 from "../components/home/features2";
-import Products from "../components/home/products";
-import Features1 from "../components/home/features1";
-import Features3 from "../components/home/Features3";
-import Count from "../components/home/count";
-import Mlogo from "../components/home/mlogo";
+import {
+  Product,
+  Products,
+  Banner,
+  Features,
+  Features1,
+  Features2,
+  Features3,
+  Mlogo,
+  Count,
+} from "@/components/home";
 
 const inter = Inter({ subsets: ["latin"] });
 

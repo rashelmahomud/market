@@ -6,7 +6,7 @@ import img3 from "/public/new-project/sponsors_3.png";
 import img4 from "/public/new-project/sponsors_4.png";
 import img5 from "/public/new-project/sponsors_5.png";
 
-const Mlogo = () => {
+export const Mlogo = () => {
   return (
     <div className="grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1  gap-10 p-5 lg:p-20 ">
       <Image className="hover:text-gray-500 mx-auto" src={img1} />
@@ -17,5 +17,3 @@ const Mlogo = () => {
     </div>
   );
 };
-
-export default Mlogo;

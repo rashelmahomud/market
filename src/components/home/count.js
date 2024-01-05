@@ -1,6 +1,6 @@
 import CountUp from "react-countup";
 
-const Count = () => {
+export const Count = () => {
   return (
     <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 bg-gradient-to-br from-green-200 p-5  lg:p-16">
       <div className="text-center gap-3">
@@ -31,5 +31,3 @@ const Count = () => {
     </div>
   );
 };
-
-export default Count;

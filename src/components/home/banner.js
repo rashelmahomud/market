@@ -9,7 +9,7 @@ import img3 from "../../../public/new-project/img3.png";
 // import 'swiper/css';
 import Image from "next/image";
 
-const Banner = () => {
+export const Banner = () => {
   return (
     <Swiper
       spaceBetween={50}
@@ -40,5 +40,3 @@ const Banner = () => {
     </Swiper>
   );
 };
-
-export default Banner;
