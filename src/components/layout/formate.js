@@ -1,6 +1,5 @@
-import Footer from "@/src/pages/footer";
-import Navigation from "@/src/pages/header";
 import Head from "next/head";
+import { Footer, Header } from "../core";
 
 function Formate({ children }) {
   return (
@@ -8,7 +7,7 @@ function Formate({ children }) {
       <Head>
         <title>Fruite Shop</title>
       </Head>
-      <Navigation />
+      <Header />
       <main className="mx-auto my-10 ">{children}</main>
 
       <Footer />

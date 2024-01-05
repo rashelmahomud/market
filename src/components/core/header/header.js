@@ -5,7 +5,7 @@ import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { FiDelete } from "react-icons/fi";
 
-const Navigation = () => {
+export const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -52,5 +52,3 @@ const Navigation = () => {
     </div>
   );
 };
-
-export default Navigation;

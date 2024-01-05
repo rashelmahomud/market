@@ -1,8 +1,8 @@
 import Image from "next/image";
-import footerImg from "../../public/new-project/f-logo.png";
+import footerImg from "../../../../public/new-project/f-logo.png";
 import { BsArrow90DegRight } from "react-icons/bs";
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <div>
       <div className="grid lg:grid-cols-2 grid-cols-1  lg:px-20 px-5 p-16 bg-lime-500 ">
@@ -95,5 +95,3 @@ const Footer = () => {
     </div>
   );
 };
-
-export default Footer;

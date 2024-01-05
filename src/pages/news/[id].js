@@ -6,8 +6,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import { BsFillChatLeftFill } from "react-icons/bs";
 import { BsSearch } from "react-icons/bs";
 import { useRouter } from "next/router";
-import Footer from "../footer";
-import Header from "../header";
+import { Footer, Header } from "@/components/core";
 
 const NewsDetails = ({ post }) => {
   const router = useRouter();
