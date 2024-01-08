@@ -1,6 +1,7 @@
 import Image from "next/image";
 import footerImg from "../../../../public/new-project/f-logo.png";
 import { BsArrow90DegRight } from "react-icons/bs";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -18,7 +19,7 @@ export const Footer = () => {
         <div>
           <input
             type="text"
-            className="border rounded lg:w-96 p-3"
+            className="border rounded lg:w-96 p-3 outline-0"
             placeholder="Enter your Mail Here.."
           />
           <button className="bg-red-400 p-3 text-white font-bold">
@@ -29,7 +30,9 @@ export const Footer = () => {
 
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10 lg:px-20 px-5 p-12 relative">
         <div>
-          <h1 className="text-4xl font-bold text-gray-800">Market.</h1>
+          <Link href="/">
+            <h1 className="text-4xl font-bold text-gray-800">Market.</h1>
+          </Link>
           <h3 className="mt-5 text-gray-400 text-2xl">
             Got Question? Call us 24/7
           </h3>
@@ -55,27 +58,67 @@ export const Footer = () => {
           <Image src={footerImg}></Image>
         </div>
         <ul>
-          <li className="text-xl font-bold text-gray-600">Quick Links</li>
-          <li className="text-gray-500 my-2">Support Center</li>
-          <li className="text-gray-500">Term & Conditions</li>
-          <li className="text-gray-500 my-2">Shipping</li>
-          <li className="text-gray-500 ">Privacy Policy</li>
-          <li className="text-gray-500 my-2">Help</li>
-          <li className="text-gray-500 ">Products Return</li>
-          <li className="text-gray-500">FAQS</li>
+          <Link href="/">
+            <li className="text-xl font-bold text-gray-600 hover:underline">
+              Quick Links
+            </li>
+          </Link>
+          <Link href="/">
+            <li className="text-gray-500 hover:underline my-2">
+              Support Center
+            </li>
+          </Link>
+          <Link href="/">
+            <li className="text-gray-500 hover:underline">Term & Conditions</li>
+          </Link>
+          <Link href="/">
+            <li className="text-gray-500 hover:underline my-2">Shipping</li>
+          </Link>
+          <Link href="/">
+            <li className="text-gray-500 hover:underline ">Privacy Policy</li>
+          </Link>
+          <Link href="/">
+            <li className="text-gray-500 hover:underline my-2">Help</li>
+          </Link>
+          <Link href="/">
+            <li className="text-gray-500 hover:underline ">Products Return</li>
+          </Link>
+          <Link href="/">
+            <li className="text-gray-500 hover:underline">FAQS</li>
+          </Link>
         </ul>
         <ul>
-          <li className="text-xl font-bold text-gray-600">Our Stores</li>
-          <li className="text-gray-500 my-2">New York</li>
-          <li className="text-gray-500">London SF</li>
-          <li className="text-gray-500 my-2">Cockfosters BP</li>
+          <Link href="#">
+            <li className="text-xl font-bold text-gray-600 hover:underline">
+              Our Stores
+            </li>
+          </Link>
+          <Link href="#">
+            <li className="text-gray-500 hover:underline my-2">New York</li>
+          </Link>
+          <Link href="#">
+            <li className="text-gray-500 hover:underline">London SF</li>
+          </Link>
+          <Link href="#">
+            <li className="text-gray-500 hover:underline my-2">
+              Cockfosters BP
+            </li>
+          </Link>
           <button className="flex items-center bg-red-400 p-3 mt-3 text-white font-bold absolute ml-36 -rotate-90">
             Back Top <BsArrow90DegRight className="text-2xl m-2" />{" "}
           </button>
-          <li className="text-gray-500">Los Angeles</li>
-          <li className="text-gray-500 my-2">Chincago</li>
-          <li className="text-gray-500">Las Vegas</li>
-          <li className="text-gray-500">Albarto</li>
+          <Link href="#">
+            <li className="text-gray-500 hover:underline">Los Angeles</li>
+          </Link>
+          <Link href="#">
+            <li className="text-gray-500 hover:underline my-2">Chincago</li>
+          </Link>
+          <Link href="#">
+            <li className="text-gray-500 hover:underline">Las Vegas</li>
+          </Link>
+          <Link href="#">
+            <li className="text-gray-500 hover:underline">Albarto</li>
+          </Link>
         </ul>
       </div>
 
@@ -85,10 +128,18 @@ export const Footer = () => {
         </div>
         <div>
           <ui className="flex list-none gap-5">
-            <li>copy</li>
-            <li>help</li>
-            <li>security</li>
-            <li>list</li>
+            <Link href="#">
+              <li className="hover:underline">copy</li>
+            </Link>
+            <Link href="#">
+              <li className="hover:underline">help</li>
+            </Link>
+            <Link href="#">
+              <li className="hover:underline">security</li>
+            </Link>
+            <Link href="#">
+              <li className="hover:underline">list</li>
+            </Link>
           </ui>
         </div>
       </div>
