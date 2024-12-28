@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Suspense, useState } from "react";
 
 import icon1 from "../../../public/new-project/icon2-1.png";
 import icon2 from "../../../public/new-project/icon3.png";
@@ -10,7 +10,7 @@ import icon6 from "../../../public/new-project/icon5.png";
 
 import Image from "next/image";
 
-export const Features = ({ products }) => {
+export const Features = ({ products, loading }) => {
   const [openTab, setOpenTab] = useState(1);
   return (
     <>

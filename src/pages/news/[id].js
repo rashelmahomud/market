@@ -173,9 +173,7 @@ const NewsDetails = ({ post }) => {
 export const getServerSideProps = async (context) => {
   const { params } = context;
   const { id } = params;
-  const res = await fetch(
-    `https://market-shop-server.vercel.app/market?id=${id}`
-  );
+  const res = await fetch(`http://localhost:5000/market?id=${id}`);
 
   const posts = await res.json();
 
@@ -193,7 +191,7 @@ export default NewsDetails;
 
 //     const { params } = context;
 
-//     const res = await fetch(`https://market-shop-server.vercel.app/market/${params.id}`)
+//     const res = await fetch(`http://localhost:5000/market/${params.id}`)
 //     const data = await res.json();
 
 //     return {
@@ -206,7 +204,7 @@ export default NewsDetails;
 
 // export const getStaticPaths = async () => {
 
-//     const res = await fetch('https://market-shop-server.vercel.app/market')
+//     const res = await fetch('http://localhost:5000/market')
 //     const data = await res.json();
 
 //     const paths = data.map((post) => {

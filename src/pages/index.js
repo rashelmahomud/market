@@ -24,19 +24,17 @@ export default function Home({ data, products }) {
       <Features3 />
       <Features2 />
       <Products products={products} title={"Discover More"} />
-      <Features1 />
       <Count />
-      <News data={data} />
+      <News />
       <Mlogo />
     </Formate>
   );
 }
-//https://market-shop-server.vercel.app/
+//https://market-shop-server.onrender.com
+
 export async function getServerSideProps() {
-  const res = await fetch("https://market-shop-server.vercel.app/market");
-  const resProduct = await fetch(
-    "https://market-shop-server.vercel.app/product"
-  );
+  const res = await fetch("https://market-shop-server.onrender.com/market");
+  const resProduct = await fetch("https://market-shop-server.onrender.com/product");
 
   if (res && resProduct) {
     const data = await res.json();
