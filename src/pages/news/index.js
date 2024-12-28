@@ -1,4 +1,4 @@
-import Newspost from "@/src/components/home/newspost";
+import Newspost from "@/components/home/newspost";
 import Link from "next/link";
 
 const News = ({ data, loading }) => {
