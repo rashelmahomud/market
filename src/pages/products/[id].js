@@ -23,7 +23,7 @@ const productDetails = ({ post }) => {
 export const getServerSideProps = async (context) => {
   const { params } = context;
   const { id } = params;
-  const res = await fetch(`http://localhost:5000/product?id=${id}`);
+  const res = await fetch(`https://market-shop-server.onrender.com/product?id=${id}`);
 
   const products = await res.json();
 

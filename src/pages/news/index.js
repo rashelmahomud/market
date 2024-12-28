@@ -30,7 +30,7 @@ const News = ({ data, loading }) => {
 };
 
 export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:5000/market");
+  const res = await fetch("https://market-shop-server.onrender.com/market");
   const news = await res.json();
 
   return {
