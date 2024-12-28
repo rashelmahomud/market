@@ -5,7 +5,7 @@ function Formate({ children }) {
   return (
     <>
       <Head>
-        <title>Fruite Shop</title>
+        <title>fruite shop</title>
       </Head>
       <Header />
       <main className="mx-auto my-10 ">{children}</main>

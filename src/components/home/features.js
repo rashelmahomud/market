@@ -37,7 +37,7 @@ export const Features = ({ products, loading }) => {
                 role="tablist"
               >
                 <div>
-                  <Image className="w-16 mx-auto mb-3" src={icon1} />
+                  <Image className="w-16 mx-auto mb-3" src={icon1} alt="image" />
                   <p>Geocary</p>
                   <p className="text-sm lowercase text-gray-600">
                     5 Items abailave
@@ -62,7 +62,7 @@ export const Features = ({ products, loading }) => {
                 role="tablist"
               >
                 <div>
-                  <Image className="w-16 mx-auto mb-3" src={icon2} />
+                  <Image className="w-16 mx-auto mb-3" src={icon2} alt="image"/>
                   <p>Geocary</p>
                   <p className="text-sm lowercase text-gray-600">
                     10 Items abailave
@@ -87,7 +87,7 @@ export const Features = ({ products, loading }) => {
                 role="tablist"
               >
                 <div>
-                  <Image className="w-16 mx-auto mb-3" src={icon3} />
+                  <Image className="w-16 mx-auto mb-3" src={icon3} alt="image"/>
                   <p>Geocary</p>
                   <p className="text-sm lowercase text-gray-600">
                     9 Items abailave
@@ -112,7 +112,7 @@ export const Features = ({ products, loading }) => {
                 role="tablist"
               >
                 <div>
-                  <Image className="w-16 mx-auto mb-3" src={icon4} />
+                  <Image className="w-16 mx-auto mb-3" src={icon4} alt="image"/>
                   <p>Geocary</p>
                   <p className="text-sm lowercase text-gray-600">
                     16 Items abailave
@@ -137,7 +137,7 @@ export const Features = ({ products, loading }) => {
                 role="tablist"
               >
                 <div>
-                  <Image className="w-16 mx-auto mb-3" src={icon5} />
+                  <Image className="w-16 mx-auto mb-3" src={icon5} image alt="image"/>
                   <p>Geocary</p>
                   <p className="text-sm lowercase text-gray-600">
                     13 Items abailave
@@ -162,7 +162,7 @@ export const Features = ({ products, loading }) => {
                 role="tablist"
               >
                 <div>
-                  <Image className="w-16 mx-auto mb-3" src={icon6} />
+                  <Image className="w-16 mx-auto mb-3" src={icon6} alt="image"/>
                   <p>Geocary</p>
                   <p className="text-sm lowercase text-gray-600">
                     22 Items abailave

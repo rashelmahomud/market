@@ -55,7 +55,7 @@ export const Footer = () => {
           </p>
           <p className="text-xl my-3">Secured by:</p>
 
-          <Image src={footerImg}></Image>
+          <Image src={footerImg} alt="image"></Image>
         </div>
         <ul>
           <Link href="/">

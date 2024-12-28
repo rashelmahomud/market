@@ -1,7 +1,6 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "@/styles/banner.module.css";
-import img from "../../../public/new-project/Banner.jpg";
 import img1 from "../../../public/new-project/Banner1.jpg";
 import img2 from "../../../public/new-project/Banner2.jpg";
 import img3 from "../../../public/new-project/img3.png";
@@ -14,8 +13,8 @@ export const Banner = () => {
     <Swiper
       spaceBetween={50}
       slidesPerView={1}
-      onSlideChange={() => console.log("slide change")}
-      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => {}}
+      onSwiper={() => {}}
     >
       <SwiperSlide className={styles.gallery}>
         <div className={styles.gallery}>

@@ -14,19 +14,20 @@ export const Mlogo = () => {
         <Image
           className="hover:text-gray-500 mx-auto hover:bg-slate-100 rounded-full"
           src={img1}
+          alt="image"
         />
       </Link>
       <Link href="#">
-        <Image src={img2} className="mx-auto hover:bg-slate-100 rounded-full" />
+        <Image src={img2} className="mx-auto hover:bg-slate-100 rounded-full" alt="image" />
       </Link>
       <Link href="#">
-        <Image src={img3} className="mx-auto hover:bg-slate-100 rounded-full" />
+        <Image src={img3} className="mx-auto hover:bg-slate-100 rounded-full" alt="image"/>
       </Link>
       <Link href="#">
-        <Image src={img4} className="mx-auto hover:bg-slate-100 rounded-full" />
+        <Image src={img4} className="mx-auto hover:bg-slate-100 rounded-full" alt="image"/>
       </Link>
       <Link href="#">
-        <Image src={img5} className="mx-auto hover:bg-slate-100 rounded-full" />
+        <Image src={img5} className="mx-auto hover:bg-slate-100 rounded-full"  alt="image"/>
       </Link>
     </div>
   );

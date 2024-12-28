@@ -7,7 +7,6 @@ const News = ({ data, loading }) => {
       <div className="flex flex-wrap justify-between p-5">
         <h1 className="text-2xl font-bold">Marketplace News</h1>
         <Link className="font-semibold text-green-500" href={"/news"}>
-          {" "}
           View All Ariticles
         </Link>
       </div>
@@ -25,7 +24,7 @@ const News = ({ data, loading }) => {
           })}
         </div>
       )}
-      ) )
+      {/* ) ) */}
     </div>
   );
 };

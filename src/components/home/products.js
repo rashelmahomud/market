@@ -87,13 +87,13 @@ export const Products = ({ title, products }) => {
                   <Swiper
                     spaceBetween={50}
                     slidesPerView={5}
-                    onSlideChange={() => console.log("slide change")}
-                    onSwiper={(swiper) => console.log(swiper)}
+                    onSlideChange={() => {}}
+                    onSwiper={() => {}}
                   >
                     {products?.map((product) => (
-                      <SwiperSlide>
+                      <SwiperSlide  key={product._id}>
                         <div
-                          key={product._id}
+                         
                           className="border rounded lg:p-5 p-3"
                         >
                           <Link href={`/products/${product._id}`}>
