@@ -7,3 +7,4 @@ export * from "./mlogo";
 export * from "./features1";
 export * from "./features2";
 export * from "./features";
+export * from './newspost'
