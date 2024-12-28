@@ -17,14 +17,12 @@ const News = ({ data, loading }) => {
           {data?.map((post) => {
             return (
               <div key={post._id}>
-                {" "}
                 <Newspost post={post} />
               </div>
             );
           })}
         </div>
       )}
-      {/* ) ) */}
     </div>
   );
 };
