@@ -1,4 +1,5 @@
-import styles from "../../../styles/features1.module.css";
+import styles from '@/styles/features1.module.css'
+
 
 import Image from "next/image";
 import img1 from "../../../public/new-project/featured1-min.jpg";

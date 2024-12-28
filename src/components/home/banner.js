@@ -1,6 +1,6 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import styles from "@/styles/banner.module.css";
+import styles from '@/styles/banner.module.css'
 import img1 from "../../../public/new-project/Banner1.jpg";
 import img2 from "../../../public/new-project/Banner2.jpg";
 import img3 from "../../../public/new-project/img3.png";
